@@ -30,8 +30,7 @@ jobs:
         retention-days: 30
   
   email:
-     steps:
-       - uses: dawidd6/action-send-mail@v3.7.1
+    - uses: dawidd6/action-send-mail@v3.7.1
          if: always()
          with:
           server_address: smtp.gmail.com

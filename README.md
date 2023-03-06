@@ -8,4 +8,9 @@ code, which is located at `tests/scrape.spec.ts`.
 For eg - let's say I want to search for `selenium-webdriver`, then replace the term `search_term` with the 
 `selenium-webdriver` inside the `tests/scrape.spec.ts`.
 
+You can fork the repo and use it.
+
+# Currently working on
+1. Trying to send email with status report.
+2. Trying to send email with the report attachment.
 

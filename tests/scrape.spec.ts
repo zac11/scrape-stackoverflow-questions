@@ -5,7 +5,7 @@ test.use({ viewport: { width: 1400, height: 1000 } });
 test("Launch the SO page with Playwright questions", async () => {
   await test.step("Launch the url", async () => {
     const browser = await chromium.launch({
-      headless: false,
+      headless: true,
     });
     const context = await browser.newContext();
     const page = await context.newPage();

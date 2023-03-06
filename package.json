@@ -1,0 +1,21 @@
+{
+  "name": "scrape-stackoverflow-questions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zac11/scrape-stackoverflow-questions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zac11/scrape-stackoverflow-questions/issues"
+  },
+  "homepage": "https://github.com/zac11/scrape-stackoverflow-questions#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.31.2"
+  }
+}

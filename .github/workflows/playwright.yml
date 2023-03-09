@@ -36,7 +36,7 @@ jobs:
         server_address: smtp.gmail.com
         server_port: 465
         username: ${{SECRETS.EMAIL_USERNAME}}
-        password: {{SECRETS.EMAIL_PASSWORD}}
+        password: ${{SECRETS.EMAIL_PASSWORD}}
         subject: Status of Playwright report run
         to: ydv.rahul09@gmail.com
         from: ydv.rahul09@gmail.com

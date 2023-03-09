@@ -32,3 +32,15 @@ jobs:
         retention-days: 30
     - name: Send email
       uses: dawidd6/action-send-mail@v3.7.1
+      with:
+        server_address: smtp.gmail.com
+        server_port: 465
+        username: {{secrets.EMAIL_USERNAME}}
+        password: {{secrets.EMAIL_PASSWORD}}
+        subject: Status of Playwright report run
+        to: ydv.rahul09@gmail.com
+        from: ydv.rahul09@gmail.com
+        secure: true
+        ignore_cert: true
+        convert_markdown: true
+        priority: low

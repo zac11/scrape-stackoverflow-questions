@@ -9,7 +9,6 @@ test("Launch the SO page with Playwright questions", async () => {
     });
     const context = await browser.newContext();
     const page = await context.newPage();
-    const baseurl = "https://stackoverflow.com";
 
     const search_term = "selenium-webdriver"; // add your search term here
     const url = `https://stackoverflow.com/questions/tagged/${search_term}`;
@@ -39,7 +38,7 @@ test("Launch the SO page with Playwright questions", async () => {
         all_items.forEach((questions) => {
           const question_name = questions.querySelector("h3").innerText;
           const question_url =
-            baseurl +
+          "https://stackoverflow.com" +
             questions.querySelector("h3 > a").getAttribute("href");
 
           data.push({ question_name, question_url });

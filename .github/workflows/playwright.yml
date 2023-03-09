@@ -1,7 +1,7 @@
 name: Playwright Tests
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main, main_test_email ]
   pull_request:
     branches: [ main, master ]
   schedule:
@@ -30,3 +30,18 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
+    - name: Send email
+      uses: dawidd6/action-send-mail@v3.7.1
+      with:
+        server_address: smtp.gmail.com
+        server_port: 465
+        username: ${{SECRETS.EMAIL_USERNAME}}
+        password: ${{SECRETS.EMAIL_PASSWORD}}
+        subject: ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
+        body: ${{ github.job }} job in worflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}
+        to: ydv.rahul09@gmail.com
+        from: ydv.rahul09@gmail.com
+        secure: true
+        ignore_cert: true
+        convert_markdown: true
+        priority: low

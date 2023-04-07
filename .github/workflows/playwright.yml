@@ -45,4 +45,4 @@ jobs:
         ignore_cert: true
         convert_markdown: true
         priority: low
-        attachments: playwright-report
+        attachments: /home/runner/work/scrape-stackoverflow-questions/scrape-stackoverflow-questions/playwright-report

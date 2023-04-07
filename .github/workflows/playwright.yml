@@ -45,4 +45,10 @@ jobs:
         ignore_cert: true
         convert_markdown: true
         priority: low
-        attachments: playwright-report
+        attachments: /home/runner/work/scrape-stackoverflow-questions/scrape-stackoverflow-questions/playwright-report/index.html
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4.4.1
+      with: 
+        branch: gh-pages
+        folder: ./playwright-report
+

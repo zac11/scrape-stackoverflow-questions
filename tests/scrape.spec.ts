@@ -2,6 +2,8 @@ import { chromium, test } from "@playwright/test";
 
 test.use({ viewport: { width: 1400, height: 1000 } });
 
+
+
 test("Launch the SO page with Playwright questions", async () => {
   await test.step("Launch the url", async () => {
     const browser = await chromium.launch({

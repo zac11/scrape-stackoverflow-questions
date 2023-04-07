@@ -10,7 +10,14 @@ For eg - let's say I want to search for `selenium-webdriver`, then replace the t
 
 You can fork the repo and use it.
 
-# Currently working on
-1. Trying to send email with status report.
-2. Trying to send email with the report attachment.
+# Report
+The report for this repo is hosted on https://zac11.github.io/scrape-stackoverflow-questions
+
+Thanks to Amuthan Sakthivel for pointing the right resource to work this out - 
+
+https://harshitshah156.medium.com/host-your-automation-report-on-github-pages-with-github-actions-69f80857bd28
+
+# Currently test status
+
+[![Playwright Tests](https://github.com/zac11/scrape-stackoverflow-questions/actions/workflows/playwright.yml/badge.svg)](https://github.com/zac11/scrape-stackoverflow-questions/actions/workflows/playwright.yml)
 
